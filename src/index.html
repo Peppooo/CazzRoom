@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="php_functions/fs/lib/lib.js"></script>
-    <script src="js/exec.js"></script>
+
+    <script src="js/main-chat.js"></script>
     <title>CazzRoom</title>
 </head>
 <body>
-    Yes
+    <br>
+    <div >
+        <img height="30px" style="vertical-align:middle" src="../Google.svg">
+        <span>Cazzroom</span>
+      </div>
+    <hr style="opacity: 30%;">
+    <br><input type="text" class="sendmessage" id="sendmessageID" onkeydown="send_message(this)"/>
+    <div id="chat">
+        <br>
+    </div>
 </body>
 </html>
