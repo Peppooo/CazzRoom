@@ -6,16 +6,22 @@
 
     <script src="php_functions/fs/lib/lib.js"></script>
 
-    <script src="js/main-log.js"></script>
+    <script src="js/main-chat.js"></script>
     <title>CazzRoom</title>
 </head>
 <body>
     <br>
-    <div >
+    <div>
         <img height="30px" style="vertical-align:middle" src="../Google.svg">
         <span>Cazzroom</span>
+        <div style="float: right;">
+            <button onclick="logout()">Logout</button>
+        </div>
       </div>
     <hr style="opacity: 30%;">
-    <br>Username: <input type="text" class="log" id="logID" onkeydown="log(this)"/>
+    <br><input type="text" class="sendmessage" id="sendmessageID" style="height: 100%;" onkeydown="send_message(this)"/>
+    <pre id="chat">
+        <br>
+    </pre>
 </body>
 </html>
